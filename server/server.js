@@ -11,7 +11,7 @@ const app= express()
 
 await connectDB()
 
-//Middleware
+//Middlewares
 
 app.use(cors())
 
