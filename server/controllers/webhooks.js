@@ -35,7 +35,7 @@ export const clerkWebhooks = async (req, res)=>{
 
                 const userData = {
                    
-                    email: data.email_addresses[0].email_address,
+                    email: data.email_address[0].email_address,
                     name: data.first_name + " " + data.last_name,
                     imageUrl: data.image_url,
                 }
@@ -57,7 +57,7 @@ export const clerkWebhooks = async (req, res)=>{
         }
 
     }catch(error){
-        res.json({sucess: false, message: error.message })
+        res.json({success: false, message: error.message })
     }
 
 }
