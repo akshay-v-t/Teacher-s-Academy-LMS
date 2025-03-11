@@ -7,8 +7,10 @@ const CoursesSection = () => {
   const {allCourses} = useContext(AppContext)
   return (
     <div className='py-16 md:px-40 px-8'>
-      <h2 className='text-3xl font-medium text-gray-800'>Learn from the best</h2>
-      <p className='text-sm md:text-base text-gray-500 mt-3'> Descover our top related coursses etc........... description</p>
+      <h2 className='text-3xl font-medium text-gray-800'>Find the Perfect Course for You
+
+      </h2>
+      <p className='text-sm md:text-base text-gray-500 mt-3'> Explore a wide range of KTET preparation courses, from subject-specific modules to full-length mock tests.<br/> Whether you're a first-time candidate or looking to improve your score, we have the right course for you.</p>
 
       <div className='grid grid-cols-auto px-4 md:px-0 md:my-16 my-10 gap-4'>
       {

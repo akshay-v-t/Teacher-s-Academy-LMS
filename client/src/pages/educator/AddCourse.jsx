@@ -22,7 +22,7 @@ const AddCourse = () => {
 
   const [lectureDetails, setLectureDetails] = useState({
 
-    letctureTitle: '',
+    lectureTitle: '',
     lectureDuration: '',
     lectureUrl: '',
     isPreviewFree: false
@@ -221,7 +221,7 @@ const handleSubmit = async (e) => {
                     {chapter.chapterContent.map((lecture,lectureIndex)=>(
 
                       <div key={lectureIndex} className='flex justify-between items-center mb-2'>
-                        <span>{ lectureIndex+1}{lecture.letctureTitle} - {lecture.lectureDuration} mins - <a href={lecture.lectureUrl} target='_blank' className='text-blue-500'>Link</a> -
+                        <span>{ lectureIndex+1}{lecture.lectureTitle} - {lecture.lectureDuration} mins - <a href={lecture.lectureUrl} target='_blank' className='text-blue-500'>Link</a> -
                         {lecture.isPreviewFree ? 'Free Preview' : 'Paid'}
                         </span> 
                         <img src={assets.cross_icon} className='cursor-pointer' alt=""  onClick={()=> handleLecture('remove', chapter.chapterId, lectureIndex)}/>
@@ -258,24 +258,24 @@ const handleSubmit = async (e) => {
                     <p>Lecture Title</p>
                     <input type="text"
                     className='mt-1 block w-full border rounded py-1 px-2'
-                    value={lectureDetails.letctureTitle} 
-                    onChange={e=> setLectureDetails({ ...lectureDetails, letctureTitle: e.target.value})}/>
+                    value={lectureDetails.lectureTitle} 
+                    onChange={e=> setLectureDetails({ ...lectureDetails, lectureTitle: e.target.value})}/>
                   </div>
 
                   <div className='mb-2'>
                     <p>Duration (Minutes)</p>
                     <input type="text"
                     className='mt-1 block w-full border rounded py-1 px-2'
-                    value={lectureDetails.letctureDuration} 
-                    onChange={e=> setLectureDetails({ ...lectureDetails, letctureDuration: e.target.value})}/>
+                    value={lectureDetails.lectureDuration} 
+                    onChange={e=> setLectureDetails({ ...lectureDetails, lectureDuration: e.target.value})}/>
                   </div>
 
                   <div className='mb-2'>
                     <p>Lecture URL</p>
                     <input type="text"
                     className='mt-1 block w-full border rounded py-1 px-2'
-                    value={lectureDetails.letctureUrl} 
-                    onChange={e=> setLectureDetails({ ...lectureDetails, letctureUrl: e.target.value})}/>
+                    value={lectureDetails.lectureUrl} 
+                    onChange={e=> setLectureDetails({ ...lectureDetails, lectureUrl: e.target.value})}/>
                   </div>
                   
                   <div className='flex gap-2 my-4'>
