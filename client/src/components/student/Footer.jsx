@@ -6,9 +6,9 @@ const Footer = () => {
   <footer className='bg-gray-900 md:px-36 text-left w-full mt-10'>
     <div className='flex flex-col md:flex-row items-start px-8 md:px-0 justify-center gap-10 md:gap-32 py-10 border-b border-white/30'>
       <div className='flex flex-col md:items-start items-center w-full mt-10 '>
-        <img src={assets.logo_dark} alt='logo'  />
+        <img src={assets.site_logo} alt='logo'  className='w-48' />
         <p className='mt-6 text-center md:text-left text-sm text-white/80'>
-        I've been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.
+        KTET Academy is your trusted learning partner, offering expertly crafted courses to help you excel in Kerala’s Teacher Eligibility Test (KTET). With experienced educators and structured lessons, we make exam preparation easy and effective. Start your journey with us today!
         </p>
 
       </div>
