@@ -110,7 +110,7 @@ const CourseDetails = () => {
                        <p className='text-blue-600'>({courseData.courseRatings.length} {courseData.courseRatings.length >1 ? 'Ratings' : 'Rating'})</p>
                        <p>{courseData.enrolledStudents.length} {courseData.enrolledStudents.length > 1 ?'Students' : 'Student'} Enrolled </p>
                      </div>
-                     <p className='text-sm '>Course by <span className='text-blue-600 underline'>{courseData.educator.name}</span></p>
+                     <p className='text-sm '>Course by <span className='text-blue-600 underline'>{courseData?.educator?.name || "Unknows Educator"}</span></p>
 
                      <div className='pt-8 text-gray-800'>
                       <h2 className='text-xl font-semibold'>Course Structure</h2>
